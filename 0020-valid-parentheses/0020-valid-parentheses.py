@@ -22,8 +22,7 @@ class Solution(object):
 
             else:
                 if stack: 
-                    temp = stack.pop()
-                    if x != chars[temp]:
+                    if x != chars[stack.pop()]:
                         return False
                 else: 
                     return False
