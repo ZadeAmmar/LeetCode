@@ -5,9 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         x = str(x)
-        y = ""
-        for z in range(len(x)-1, -1, -1):
-            y += x[z]
+        y = x[::-1]
 
         if(x == y):
             return True
