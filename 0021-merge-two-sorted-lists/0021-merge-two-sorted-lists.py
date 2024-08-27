@@ -18,10 +18,17 @@ class Solution(object):
 
             cur = cur.next
             
-        if list1:
+        while list1 != None:
             cur.next = list1
-        else:
+            list1 = list1.next
+            cur = cur.next
+        
+        while list2 != None:
             cur.next = list2
+            list2 = list2.next
+            cur = cur.next
+        
+        cur.next = None
 
         return head.next
                 
