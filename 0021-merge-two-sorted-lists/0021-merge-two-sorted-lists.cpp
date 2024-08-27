@@ -25,19 +25,11 @@ public:
             cur = cur->next;
         }
 
-        while(list1 != nullptr){
+        if(list1 != nullptr){
             cur->next = list1;
-            list1 = list1->next;
-            cur = cur->next;
-        }
-
-        while(list2 != nullptr){
+        } else {
             cur->next = list2;
-            list2 = list2->next;
-            cur = cur->next;
         }
-
-        cur->next = nullptr;
 
         return dummy->next;
     }
