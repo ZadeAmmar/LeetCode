@@ -6,7 +6,7 @@
 class Solution(object):
     def deleteDuplicates(self, head):
         # singly linked list. Each duplicate can only be a dupe of the one before it since its sorted
-        if head.next == None:
+        if head == None or head.next == None:
             return head
         cur = head.next
         prev = head
