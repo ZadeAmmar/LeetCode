@@ -1,7 +1,7 @@
 class Solution(object):
     def lengthOfLastWord(self, s):
         # iterate backwards over the string
-        s = s.rstrip(" ")
+        s = " " + s.strip(" ")
         if len(s)==1:
             return 1
         length = len(s)
