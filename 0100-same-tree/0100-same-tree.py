@@ -7,7 +7,9 @@
 class Solution(object):
     def isSameTree(self, p, q):
         boolVar = False
-        if p == None or q == None and p!=q:
+        if p == None and q == None:
+            return True
+        if p == None or q == None:
             return False
         if p.val == q.val:
             boolVar = True
